@@ -4,11 +4,13 @@
 
 <p style="text-align: center">Загрузчик видео из тиктока, ютуб шортсов.<br>Открытый исходный код,
 написанный на <a href=https://python.org>Python</a> на библиотеке <a href="https://aiogram.dev/">aiogram</a>
+и <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>
 </p>
 
 <p align="center">
 <a href=https://python.org><img alt="python" src="https://img.shields.io/badge/python-grey?logo=python&style=for-the-badge&logoColor=white"></a>
 <a href=https://www.gnu.org/licenses/gpl-3.0.html><img alt="gpl-3.0" src="https://img.shields.io/badge/license-gpl--3.0-white?style=for-the-badge"></a>
+<a href="https://github.com/yt-dlp/yt-dlp"><img alt="yt-dlp" src="https://img.shields.io/badge/yt--dlp-grey?style=for-the-badge"></a>
 </p>
 
 ## Как запустить?
@@ -31,7 +33,7 @@ uv run src/main.py
 
 ## TODO проекта
 
-- [x] Сделать скачку видео/аудио через `youtube-dlp`
+- [x] Сделать скачку видео/аудио через [`yt-dlp`](https://github.com/yt-dlp/yt-dlp)
 - [x] Сделать удаление видео каждый запуск
 - [x] Написать README
 - [x] Добавить LICENSE и заголовки к лицензии на каждом файле исходного кода
