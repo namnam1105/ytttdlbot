@@ -11,6 +11,7 @@
 <a href=https://python.org><img alt="python" src="https://img.shields.io/badge/python-grey?logo=python&style=for-the-badge&logoColor=white"></a>
 <a href=https://www.gnu.org/licenses/gpl-3.0.html><img alt="gpl-3.0" src="https://img.shields.io/badge/license-gpl--3.0-white?style=for-the-badge"></a>
 <a href="https://github.com/yt-dlp/yt-dlp"><img alt="yt-dlp" src="https://img.shields.io/badge/yt--dlp-grey?style=for-the-badge"></a>
+<a href="https://aiogram.dev/"><img alt="aiogram" src="https://img.shields.io/badge/aiogram-grey?style=for-the-badge"></a>
 </p>
 
 ## Как запустить?
