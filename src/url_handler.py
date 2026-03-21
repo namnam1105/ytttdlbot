@@ -72,13 +72,10 @@ async def cancel(callback: CallbackQuery, state: FSMContext):
 async def download_handler(callback: CallbackQuery, state: FSMContext, downloader: VideoDownloader):
     data = await state.get_data()
     url = data['url']
+    title = data['title']
     await state.clear()
 
     await callback.message.edit_text("скачиваю...")
-
-    info = await asyncio.to_thread(downloader.get_info, url, str(callback.message.message_id)+str(callback.message.chat.id))
-    title = info.get("title", "Без названия")
-    webpage_url = info.get("webpage_url", url)
 
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [
@@ -113,7 +110,7 @@ async def download_handler(callback: CallbackQuery, state: FSMContext, downloade
                 return
 
         case "video":
-            download_id = str(message.message_id)+str(message.chat.id)
+            download_id = str(callback.message.message_id)+str(callback.message.chat.id)
             try:
                 path = await asyncio.wait_for(
                     asyncio.to_thread(downloader.download_video, url, download_id),
