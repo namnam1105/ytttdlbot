@@ -69,7 +69,7 @@ class DownloadBot:
     async def start(self) -> None:
         logging.info('Starting bot...')
         logging.info("Cleaning up videos...")
-        self.cleanup()
+        cleanup()
         logging.info('Loading routers...')
         self.setup_routers()
         self.dp['downloader'] = self.downloader
