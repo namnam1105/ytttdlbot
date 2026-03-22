@@ -1,8 +1,5 @@
-<h1 style="text-align: center">ytttdlbot</h1>
-
-
-
-<p style="text-align: center">Загрузчик видео из тиктока, ютуб шортсов.<br>Открытый исходный код,
+<h1 align="center">ytttdlbot</h1>
+<p align="center">Загрузчик видео из тиктока, ютуб шортсов.<br>Открытый исходный код,
 написанный на <a href=https://python.org>Python</a> на библиотеке <a href="https://aiogram.dev/">aiogram</a>
 и <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a>
 </p>
